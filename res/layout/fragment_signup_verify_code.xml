@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="#ffffffff"
+        android:padding="15.0dip" >
+
+        <EditText
+            android:id="@+id/verify_code_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edit_selector"
+            android:hint="@string/input_verify_code"
+            android:imeOptions="actionDone|flagNoExtractUi"
+            android:inputType="number"
+            android:textColor="#ff000000"
+            android:textColorHint="@color/black3"
+            android:textSize="16.0sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/verify_code_button"
+        android:layout_width="fill_parent"
+        android:layout_height="45.0dip"
+        android:layout_marginLeft="15.0dip"
+        android:layout_marginRight="15.0dip"
+        android:layout_marginTop="15.0dip"
+        android:background="@drawable/bg_cornered_green"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/submit_verify_code"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_h3" />
+
+</LinearLayout>

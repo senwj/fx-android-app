@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="progress_bar_style_small" parent="@android:style/Widget.ProgressBar.Small">
+        <item name="android:indeterminateDrawable">@drawable/progress_bar</item>
+    </style>
+
+</resources>

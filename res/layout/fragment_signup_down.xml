@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/steps"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:background="#ffffffff"
+        android:clickable="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/step1"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:button="@null"
+            android:checked="true"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/signup_step1"
+            android:textColor="@color/black_bule_radio_button_selector"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5.0dip"
+            android:background="@drawable/register_right_arrow" />
+
+        <RadioButton
+            android:id="@+id/step2"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/signup_step2"
+            android:textColor="@color/black_bule_radio_button_selector"
+            android:textSize="14.0sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/register_right_arrow" />
+
+        <RadioButton
+            android:id="@+id/step3"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:background="@null"
+            android:button="@null"
+            android:checked="false"
+            android:clickable="false"
+            android:gravity="center"
+            android:text="@string/signup_step3"
+            android:textColor="@color/black_bule_radio_button_selector"
+            android:textSize="14.0sp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@id/container"
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0" />
+
+</LinearLayout>

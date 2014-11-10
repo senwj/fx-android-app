@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff0f0f0" >
+
+    <ScrollView
+        android:id="@+id/login_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/layout_username_password"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="20.0dip"
+                android:background="#ffffffff"
+                android:orientation="vertical"
+                android:padding="20.0dip" >
+
+                <EditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_edit_selector"
+                    android:hint="@string/login_username"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="10.0dip"
+                    android:scrollbars="none"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textColorHint="@color/black3"
+                    android:textSize="16.0sp" />
+
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20.0dip"
+                    android:background="@drawable/bg_edit_selector"
+                    android:hint="@string/login_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:paddingLeft="10.0dip"
+                    android:singleLine="true"
+                    android:textColor="#ff000000"
+                    android:textColorHint="@color/black3"
+                    android:textSize="16.0sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_login_register"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20.0dip"
+                android:layout_marginLeft="20.0dip"
+                android:layout_marginRight="20.0dip"
+                android:layout_marginTop="15.0dip"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/layout_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <Button
+                        android:id="@+id/btn_login"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45.0dip"
+                        android:background="@drawable/bg_cornered_green"
+                        android:gravity="center"
+                        android:text="注册"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_h3" />
+
+                    <ProgressBar
+                        android:id="@+id/login_progress"
+                        style="@style/progress_bar_style_small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|center"
+                        android:layout_marginRight="5.0dip"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center_vertical" >
+
+                    <TextView
+                        android:id="@+id/register"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/list_row_selector"
+                        android:drawablePadding="5.0dip"
+                        android:text="手机注册"
+                        android:textColor="@color/green"
+                        android:textSize="16.0sp" />
+
+                 
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
